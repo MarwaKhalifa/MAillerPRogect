@@ -13,7 +13,7 @@ header {
     transition: background-color 0.3s ease;
 
     .left-side {
-        width: 171px;
+        width: 160px;
         max-width: 20%;
 
         i {
@@ -32,6 +32,8 @@ header {
 
     .right-side {
         nav {
+            width: 424px;
+
             a {
                 font-family: 'Plus jakarta sans';
                 text-decoration: none;
@@ -144,7 +146,7 @@ header {
         height: 352px !important;
         top: 70px !important;
         background-color: #f6f6fa;
-     
+
     }
 
     .offcanvas-body .registerBtn {
@@ -194,7 +196,77 @@ header {
 
     }
 }
+
 header.scrolled {
-    background-color: #f6f6fa;; 
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* ظل خفيف اختياري */
+    background-color: #f6f6fa;
+    ;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.heroSection {
+    .left-side {
+        height: 347.729px;
+        width: 596.333px;
+        margin: 48px 0 0 0;
+        padding: 0 12px 0 12px;
+        min-height: auto;
+        max-width: 100%;
+        min-width: auto;
+
+        h1 {
+
+            font-family: "Plus Jakarta Sans", sans-serif;
+            font-size: clamp(40px, 5vw, 56px);
+            font-weight: 700;
+            line-height: 67.2px;
+            text-align: start;
+            color: rgb(53, 63, 79);
+            margin: 0 0 24px 0;
+        }
+
+        p {
+
+            font-family: Rubik, sans-serif;
+            font-size: clamp(22px, 2.2vw, 24px);
+            font-weight: 400;
+            letter-spacing: normal;
+            line-height: 36px;
+            text-align: start;
+            color: rgb(117, 117, 117);
+
+
+        }
+
+        .startBtn {
+            /* Font & Text */
+            font-family: Rubik, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: center;
+            background-color: rgb(247, 71, 128);
+            background-image: none;
+            background-position: 0% 0%;
+            background-repeat: repeat;
+            color: rgb(255, 255, 255);
+            height: 57.3333px;
+            width: 183.177px;
+            border: 0.666667px solid rgb(247, 71, 128);
+            margin: 0px;
+            padding: 16px 48px;
+            outline: rgb(255, 255, 255) dashed 0px;
+            border-radius: 800px;
+
+            &:hover {
+                background-color: white;
+                color: #f74780;
+            }
+        }
+
+    }
+
+    .right-side {
+        height: 381.552px;
+        width: 572.333px
+    }
 }
