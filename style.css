@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    z-index: 1000;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+
+    .left-side {
+        width: 171px;
+        max-width: 20%;
+
+        i {
+            color: #f74780;
+            font-size: 31.6px;
+        }
+
+        h1 {
+            color: #f74780;
+            font-family: Plus jakarta sans;
+            font-size: 34.84px;
+            font-weight: 700;
+            line-height: 41.808px;
+        }
+    }
+
+    .right-side {
+        nav {
+            a {
+                font-family: 'Plus jakarta sans';
+                text-decoration: none;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 24px;
+                color: #757575;
+
+                &:hover {
+                    color: #f74780
+                }
+
+            }
+
+            #active {
+                color: #f74780
+            }
+        }
+
+        .lognBtn {
+            font-family: Rubik, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: normal;
+            line-height: 24px;
+            text-align: center;
+            background-color: rgb(246, 240, 246);
+            color: rgb(247, 77, 132);
+            height: 41.3333px;
+            width: 94.8958px;
+            border: 0.666667px solid rgb(247, 71, 128);
+            margin: 0px 24px 0px 0px;
+            padding: 8px 24px;
+            transition: 0.5s;
+            outline: rgb(247, 74, 128) dashed 0px;
+            border-radius: 800px;
+
+            &:hover {
+                background-color: #f74780;
+                color: white;
+            }
+        }
+
+        .signBtn {
+            font-family: Rubik, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: center;
+            background-color: rgb(247, 71, 128);
+            color: rgb(255, 255, 255);
+            height: 41.3333px;
+            width: 107.083px;
+            border: 0.666667px solid rgb(247, 71, 128);
+            padding: 8px 24px;
+            transition: 0.5s;
+            outline: rgb(255, 255, 255) dashed 0px;
+            border-radius: 800px;
+
+            &:hover {
+                background-color: white;
+                color: #f74780;
+            }
+        }
+
+
+    }
+
+    .toogleMenu {
+        height: 42px;
+        width: 58.8333px;
+        border: 0.666667px solid rgb(247, 71, 128);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        i {
+            font-size: 30px;
+            font-weight: 900;
+            line-height: 20px;
+            text-align: center;
+            color: rgb(247, 71, 128);
+        }
+
+    }
+
+    .offcanvas-body {
+
+        a {
+            font-family: 'Plus jakarta sans';
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            color: #757575;
+
+            &:hover {
+                color: #f74780
+            }
+
+        }
+
+        #active {
+            color: #f74780
+        }
+    }
+
+    .offcanvas-top {
+        height: 352px !important;
+        top: 70px !important;
+        background-color: #f6f6fa;
+     
+    }
+
+    .offcanvas-body .registerBtn {
+        .lognBtn {
+            font-family: Rubik, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: normal;
+            line-height: 24px;
+            text-align: center;
+            background-color: rgb(246, 240, 246);
+            color: rgb(247, 77, 132);
+            height: 41.3333px;
+            width: 94.8958px;
+            border: 0.666667px solid rgb(247, 71, 128);
+            margin: 0px 24px 0px 0px;
+            padding: 8px 24px;
+            outline: rgb(247, 74, 128) dashed 0px;
+            border-radius: 800px;
+
+            &:hover {
+                background-color: #f74780;
+                color: white;
+            }
+        }
+
+        .signBtn {
+            font-family: Rubik, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: center;
+            background-color: rgb(247, 71, 128);
+            color: rgb(255, 255, 255);
+            height: 41.3333px;
+            width: 107.083px;
+            border: 0.666667px solid rgb(247, 71, 128);
+            padding: 8px 24px;
+            outline: rgb(255, 255, 255) dashed 0px;
+            border-radius: 800px;
+
+            &:hover {
+                background-color: white;
+                color: #f74780;
+            }
+        }
+
+    }
+}
+header.scrolled {
+    background-color: #f6f6fa;; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* ظل خفيف اختياري */
+}
