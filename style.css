@@ -13,8 +13,7 @@ header {
     transition: background-color 0.3s ease;
 
     .left-side {
-        width: 160px;
-        max-width: 20%;
+        max-width: 184px;
 
         i {
             color: #f74780;
@@ -337,7 +336,7 @@ header.scrolled {
     .serviceTxt {
         h4 {
             font-family: "Plus Jakarta Sans", sans-serif;
-            font-size: 24px;
+            font-size: clamp(22px, 5vw, 24px);
             font-weight: 500;
             line-height: 28.8px;
             color: rgb(247, 71, 128);
@@ -348,11 +347,11 @@ header.scrolled {
         h1 {
 
             font-family: "Plus Jakarta Sans", sans-serif;
-            font-size: 48px;
+            font-size: clamp(36px, 4vw, 48px);
             font-weight: 700;
             line-height: 57.6px;
             color: rgb(53, 63, 79);
-
+            margin: 0 0 24px 0
         }
 
         p {
@@ -365,6 +364,228 @@ header.scrolled {
             margin: 0px;
             padding: 0px;
             text-align: center;
+            max-height: 72px;
+            max-width: 900px;
+        }
+    }
+
+    .serviceCards {
+        .card-container {
+            min-height: 414.125px;
+            height: 100%;
+            width: 261px;
+            max-width: 100%;
+            padding: 24px;
+            outline: rgb(117, 117, 117) dashed 0px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 45px 0px;
+            border-radius: 10px;
+            transition: 0.5s;
+
+            &:hover {
+                background-color: rgb(102, 16, 242, 0.09);
+            }
+
+            .service-icon-container {
+                font-family: Rubik, sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                color: rgb(255, 255, 255);
+                background-color: #f6f6fa;
+                height: 128px;
+
+                transition: 0.5s;
+                outline: #f6f6fa;
+                border-radius: 10px;
+
+                &:hover {
+                    background-color: white;
+                }
+
+                i {
+                    font-size: 80px;
+                    font-weight: 900;
+                    line-height: 80px;
+                    color: rgb(102, 16, 242);
+
+                }
+
+
+
+            }
+
+            h4 {
+                font-family: "Plus Jakarta Sans", sans-serif;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 500;
+                color: rgb(53, 63, 79);
+                margin: 0px 0px 24px;
+                padding: 0px;
+                text-align: center;
+            }
+
+            p {
+
+                font-family: Rubik, sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                color: rgb(117, 117, 117);
+                text-align: center;
+            }
+
+            .readMoreBtn {
+                font-family: Rubik, sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                vertical-align: middle;
+                background-attachment: scroll;
+                background-color: #f6f6fa;
+                color: rgb(247, 80, 134);
+                height: 41.3333px;
+                width: 127.719px;
+                border: 0.666667px solid rgb(246, 246, 250);
+                transition: 0.5s;
+                border-radius: 800px;
+
+                &:hover {
+                    color: rgb(255, 246, 249);
+                    background-color: #f74780;
+                }
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            .card-container {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.Features {
+    .serviceTxt {
+        h4 {
+            font-family: "Plus Jakarta Sans", sans-serif;
+            font-size: clamp(22px, 5vw, 24px);
+            font-weight: 500;
+            line-height: 28.8px;
+            color: rgb(247, 71, 128);
+            margin: 0px 0px 4px;
+            padding: 0px;
+        }
+
+        h1 {
+
+            font-family: "Plus Jakarta Sans", sans-serif;
+            font-size: clamp(35px, 4vw, 48px);
+            font-weight: 700;
+            line-height: 57.6px;
+            text-align: center;
+            color: rgb(53, 63, 79);
+            max-width: 900px;
+        }
+
+        p {
+
+            font-family: Rubik, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: rgb(117, 117, 117);
+            margin: 0px;
+            padding: 0px;
+            text-align: center;
+            max-height: 72px;
+            max-width: 900px;
+        }
+    }
+
+    .serviceCards {
+        .card-container {
+            min-height: 350.6px;
+            height: 100%;
+            width: 261px;
+            max-width: 100%;
+            padding: 24px;
+
+
+        }
+
+        .service-icon-container {
+            font-family: Rubik, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: rgb(255, 255, 255);
+            background-color: #f6f6fa;
+            height: 128px;
+            outline: #f6f6fa;
+            border-radius: 10px;
+
+        }
+
+        .card-icon {
+            font-size: 80px;
+            font-weight: 900;
+            line-height: 80px;
+            color: rgb(102, 16, 242);
+
+        }
+
+
+
+
+
+        a {
+            font-family: "Plus Jakarta Sans", sans-serif;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            color: rgb(53, 63, 79);
+            margin: 0px 0px 24px;
+            padding: 0px;
+            text-align: center;
+            text-decoration: none;
+
+            &:hover {
+                color: #f74780;
+            }
+
+            .arrow {
+                font-family: "Font Awesome 5 Free";
+                font-size: 18px;
+                color: rgb(53, 63, 79);
+                font-weight: 900;
+                line-height: 24px;
+
+                &:hover {
+                    color: #f74780;
+                }
+            }
+        }
+
+
+
+        p {
+
+            font-family: Rubik, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: rgb(117, 117, 117);
+            text-align: center;
+        }
+
+
+    }
+
+
+    @media (max-width: 767.98px) {
+        .card-container {
+            width: 100%;
         }
     }
 }
