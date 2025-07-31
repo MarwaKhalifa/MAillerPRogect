@@ -584,8 +584,135 @@ header.scrolled {
                 width: 100%;
             }
         }
+
+        .featureBtn {
+            font-family: Rubik, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: center;
+            background-color: rgb(247, 71, 128);
+            color: rgb(255, 255, 255);
+            height: auto;
+            width: auto;
+            border: 0.666667px solid rgb(247, 71, 128);
+            transition: 0.5s;
+            outline: rgb(255, 255, 255) dashed 0px;
+            border-radius: 800px;
+
+            &:hover {
+                background-color: white;
+                color: #f74780;
+            }
+        }
     }
 
+}
 
 
+.featureDiv {
+    .animated-bg {
+        img {
+            color: rgb(117, 117, 117);
+            height: auto;
+            min-height: 465.312px;
+            max-width: 534px;
+            width: 100%;
+        }
+    }
+
+    .txt-side {
+        min-height: 465px;
+        max-width: 540px;
+        width: 100%;
+        margin: 48px 0px 0px;
+        
+
+        h4 {
+            font-family: "Plus Jakarta Sans", sans-serif;
+            font-size: clamp(22px, 5vw, 24px);
+            font-weight: 500;
+            line-height: 28.8px;
+            word-spacing: 0px;
+            color: rgb(247, 71, 128);
+            margin: 0px 0px 8px;
+        }
+
+        h1 {
+            font-family: "Plus Jakarta Sans", sans-serif;
+            font-size: clamp(35px, 5vw, 48px);
+            font-weight: 700;
+            line-height: 57.6px;
+            color: rgb(53, 63, 79);
+
+        }
+
+        p {
+            font-family: Rubik, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: rgb(117, 117, 117);
+        }
+
+        .newspaperDiv {
+            height: 64px;
+            width: 255px;
+            max-width: 100%;
+
+            .fa-users,
+            .fa-newspaper {
+                font-family: "Font Awesome 5 Free";
+                font-size: 64px;
+                font-weight: 900;
+                line-height: 64px;
+                color: rgb(102, 16, 242);
+                height: 64px;
+                width: 72px;
+                margin: 0px;
+                padding: 0px;
+
+            }
+
+            h2 {
+                font-family: "Plus Jakarta Sans", sans-serif;
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 38.4px;
+                color: rgb(53, 63, 79);
+
+            }
+
+            span {
+                font-family: Rubik, sans-serif;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 21px;
+                color: rgb(53, 63, 79);
+
+            }
+        }
+
+        .readBtn {
+            font-family: Rubik, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: center;
+            background-color: #f74780;
+            color: white;
+            transition: 0.5s;
+            height: 57.3333px;
+            width: 175.719px;
+            border: 0.666667px solid rgb(248, 89, 141);
+            margin: 0px;
+            padding: 16px 48px;
+            border-radius: 800px;
+
+            &:hover {
+                background-color: white;
+                color: #f74780;
+            }
+        }
+    }
 }
