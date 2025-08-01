@@ -626,7 +626,7 @@ header.scrolled {
         max-width: 540px;
         width: 100%;
         margin: 48px 0px 0px;
-        
+
 
         h4 {
             font-family: "Plus Jakarta Sans", sans-serif;
@@ -712,6 +712,280 @@ header.scrolled {
             &:hover {
                 background-color: white;
                 color: #f74780;
+            }
+        }
+    }
+}
+
+
+.FAQsection {
+    min-height: 580px;
+    width: 100%;
+    height: auto;
+    background-color: #f6f6fa;
+
+    .content {
+        width: 100%;
+        margin: -48px -24px 0px;
+        padding: 0px;
+        border: red 1ps solid;
+
+        .collapseDiv {
+            min-height: 204px;
+            width: 534px;
+            max-width: 100%;
+
+            .itemCollapse {
+                background-color: rgb(255, 255, 255);
+                min-height: 52px;
+                width: 534px;
+                max-width: 100%;
+                margin-bottom: 0 !important;
+                padding: 16px 20px;
+                z-index: 2;
+                border-radius: 10px;
+
+                h4 {
+                    font-family: "Plus Jakarta Sans", sans-serif;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 19.2px;
+                    color: rgb(117, 117, 117);
+                }
+
+
+
+                .collapse {
+                    margin: 0 !important;
+
+                    .card-body {
+                        margin: 0 !important;
+                        border: none !important;
+
+
+                        h5 {
+                            font-family: "Plus Jakarta Sans", sans-serif;
+                            font-size: 20px;
+                            font-weight: 500;
+                            line-height: 24px;
+                            color: #353f4f;
+                        }
+
+                        p {
+                            font-family: Rubik, sans-serif;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 24px;
+                            color: rgb(117, 117, 117);
+
+                        }
+                    }
+
+                }
+
+            }
+
+        }
+
+        .bg-img {
+            min-height: 388.354px;
+            width: 534px;
+            max-width: 100%;
+            margin: 0px;
+            padding: 0px;
+        }
+    }
+}
+
+.pricingSection {
+    .upperText {
+
+        h4 {
+            font-family: "Plus Jakarta Sans", sans-serif;
+            font-size: clamp(22px, 5vw, 24px);
+            font-weight: 500;
+            line-height: 28.8px;
+            color: rgb(247, 71, 128);
+            margin: 0px 0px 4px;
+            padding: 0px;
+        }
+
+        h1 {
+
+            font-family: "Plus Jakarta Sans", sans-serif;
+            font-size: clamp(36px, 4vw, 48px);
+            font-weight: 700;
+            line-height: 57.6px;
+            color: rgb(53, 63, 79);
+            margin: 0 0 24px 0;
+            text-align: center;
+        }
+
+        p {
+
+            font-family: Rubik, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: rgb(117, 117, 117);
+            margin: 0px;
+            padding: 0px;
+            text-align: center;
+            max-height: 72px;
+            max-width: 900px;
+        }
+    }
+
+    .pricingCards {
+        .priceCardPlan {
+            height: 729.333px;
+            width: 339.99px;
+            max-width: 100%;
+            background-color: #f6f6fa;
+            border-radius: 10px;
+
+            &:hover {
+                background-color: white;
+                box-shadow: -1px 6px 55px 0px rgba(0, 0, 0, 0.48);
+                transition: 0.5s;
+            }
+
+            @media (max-width: 767.98px) {
+
+                width: 100%;
+            }
+
+            .cardContainer {
+                .upperCard {
+                    height: 160px;
+                    max-width: 100%;
+                    border-bottom: 0.666667px solid rgb(222, 226, 230);
+                    margin: 0px;
+                    padding: 24px;
+                    position: relative;
+                    overflow: hidden;
+
+                    p {
+
+                        font-family: Rubik, sans-serif;
+                        font-size: 32px;
+                        font-weight: 700;
+                        line-height: 48px;
+                        text-indent: 0px;
+                        color: rgb(53, 63, 79);
+                    }
+
+                    sup {
+
+                        font-family: Rubik, sans-serif;
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: 24px;
+                        text-indent: 0px;
+                        word-spacing: 0px;
+                        color: rgb(53, 63, 79);
+                        margin: 0px;
+                        padding: 0px;
+                    }
+
+                    span {
+                        font-family: Rubik, sans-serif;
+                        font-size: 48px;
+                        font-weight: 700;
+                        line-height: 57.6px;
+                        color: rgb(53, 63, 79);
+                        margin: 0px;
+                        padding: 0px;
+
+                    }
+
+                    .pinccolor {
+                        color: #f74780;
+                    }
+
+                    .triangle {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        width: 0;
+                        height: 0;
+                        border-top: 100px solid #f74780;
+                        border-left: 110px solid transparent;
+                        z-index: 1;
+                        border-top-right-radius:10px ;
+
+                    }
+
+                    .triangle span {
+                        position: absolute;
+                        top: -92px;
+                        right: 10px;
+                        transform: rotate(45deg);
+                        color: rgb(255, 255, 255);
+                        font-size: 16px;
+                        font-weight: 400;
+                        font-family: Rubik, sans-serif;
+                        z-index: 2;
+
+                    }
+
+                    .purpleColor {
+                        color: #6610f2;
+                    }
+                }
+
+                .lowerCard {
+                    .checktrue {
+                        font-family: "Font Awesome 5 Free";
+                        font-size: 16px;
+                        font-weight: 900;
+                        line-height: 16px;
+                        color: rgb(25, 135, 84);
+                        padding: 0px;
+                    }
+
+                    p {
+                        font-family: Rubik, sans-serif;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 24px;
+                        color: rgb(117, 117, 117);
+                        margin: 0px 0px 16px;
+                        padding: 0px;
+                    }
+
+                    .checkfalse {
+
+                        font-family: "Font Awesome 5 Free";
+                        font-size: 16px;
+                        font-weight: 900;
+                        line-height: 16px;
+                        color: rgb(220, 53, 69);
+                        margin: 0px 4px 0px 0px;
+                        padding: 0px;
+                    }
+
+                    .startBtn {
+
+                        font-family: Rubik, sans-serif;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 24px;
+                        text-align: center;
+                        background-color: rgb(246, 246, 250);
+                        color: rgb(247, 71, 128);
+                        height: 41.3333px;
+                        width: 183.177px;
+                        border: 0.666667px solid rgb(246, 246, 250);
+                        transition: 0.5s;
+                        border-radius: 800px;
+
+                        &:hover {
+                            color: white;
+                            background-color: #f74780;
+                        }
+                    }
+                }
             }
         }
     }
