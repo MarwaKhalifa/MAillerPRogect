@@ -755,34 +755,29 @@ header.scrolled {
 
 
 
-                .collapse {
+
+                .CollapsCardDiv {
                     margin: 0 !important;
-
-                    .card-body {
-                        margin: 0 !important;
-                        border: none !important;
+                    border: none !important;
 
 
-                        h5 {
-                            font-family: "Plus Jakarta Sans", sans-serif;
-                            font-size: 20px;
-                            font-weight: 500;
-                            line-height: 24px;
-                            color: #353f4f;
-                        }
-
-                        p {
-                            font-family: Rubik, sans-serif;
-                            font-size: 16px;
-                            font-weight: 400;
-                            line-height: 24px;
-                            color: rgb(117, 117, 117);
-
-                        }
+                    h5 {
+                        font-family: "Plus Jakarta Sans", sans-serif;
+                        font-size: 20px;
+                        font-weight: 500;
+                        line-height: 24px;
+                        color: #353f4f;
                     }
 
-                }
+                    p {
+                        font-family: Rubik, sans-serif;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 24px;
+                        color: rgb(117, 117, 117);
 
+                    }
+                }
             }
 
         }
@@ -912,7 +907,7 @@ header.scrolled {
                         border-top: 100px solid #f74780;
                         border-left: 110px solid transparent;
                         z-index: 1;
-                        border-top-right-radius:10px ;
+                        border-top-right-radius: 10px;
 
                     }
 
@@ -987,6 +982,348 @@ header.scrolled {
                     }
                 }
             }
+        }
+    }
+}
+
+.blogs {
+    .upperText {
+        h4 {
+            font-family: "Plus Jakarta Sans", sans-serif;
+            font-size: clamp(22px, 5vw, 24px);
+            font-weight: 500;
+            line-height: 28.8px;
+            color: rgb(247, 71, 128);
+            margin: 0px 0px 4px;
+            padding: 0px;
+        }
+
+        h1 {
+
+            font-family: "Plus Jakarta Sans", sans-serif;
+            font-size: clamp(36px, 4vw, 48px);
+            font-weight: 700;
+            line-height: 57.6px;
+            color: rgb(53, 63, 79);
+            margin: 0 0 24px 0;
+            text-align: center;
+        }
+
+        p {
+
+            font-family: Rubik, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: rgb(117, 117, 117);
+            margin: 0px;
+            padding: 0px;
+            text-align: center;
+            max-height: 72px;
+            max-width: 900px;
+
+        }
+    }
+
+    .blogCardsContainer {
+        .blogCard {
+            height: 491.458px;
+            width: 285px;
+            margin: 24px 0px 0px;
+            padding: 0px 12px;
+            max-width: 100%;
+
+            @media (max-width: 767.98px) {
+                width: 100%;
+                padding: 0 !important;
+                margin: 50px 0 !important;
+            }
+
+            .overLayDivContainer {
+
+                width: 261px;
+                max-width: 100%;
+                position: relative;
+
+                @media (max-width: 767.98px) {
+
+                    width: 100%;
+                }
+
+
+                .overLayDiv {
+                    height: 100%;
+                    width: 100%;
+                    max-width: 100%;
+                    z-index: 2;
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+
+                    &:hover {
+                        background-color: rgba(0, 0, 0, 0.3);
+                        border-top-left-radius: 10px;
+                        border-top-right-radius: 10px;
+
+
+                    }
+
+                    @media (max-width: 767.98px) {
+                        width: 100%;
+                    }
+
+
+
+                }
+
+                img {
+                    background-color: #c7a9fa;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    z-index: 1;
+
+                }
+
+            }
+
+
+
+        }
+
+
+
+        .iconContainer {
+            width: 261px;
+            max-width: 100%;
+            bottom: 50px;
+            z-index: 3;
+
+            span {
+                font-family: Rubik, sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                color: rgb(255, 255, 255);
+
+                i {
+                    color: rgb(255, 255, 255);
+                    height: 16px;
+                    width: 16px;
+                }
+            }
+
+            @media (max-width: 767.98px) {
+                width: 100%;
+            }
+        }
+
+        .blogText {
+            min-height: 300.667px;
+            height: auto;
+            width: 261px;
+            max-width: 100%;
+            border: 1px solid #DEE2E6;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+
+            @media (max-width: 767.98px) {
+
+                width: 100%;
+            }
+
+            h5 {
+
+                font-family: "Plus Jakarta Sans", sans-serif;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 24px;
+                text-align: start;
+                color: rgb(53, 63, 79);
+                margin: 0 0 24px 0;
+            }
+
+            p {
+
+                font-family: Rubik, sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                text-align: start;
+                vertical-align: baseline;
+                color: rgb(53, 63, 79);
+                margin: 0px 0px 24px;
+                padding: 0px;
+            }
+
+            button {
+                font-family: Rubik, sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                text-align: center;
+                background-color: rgb(246, 246, 250);
+                color: rgb(247, 71, 128);
+                height: 41.3333px;
+                width: 127.719px;
+                border: 0.666667px solid rgb(246, 246, 250);
+                margin: 0px;
+                padding: 8px 24px;
+                transition: 0.5s;
+                border-radius: 800px;
+
+                &:hover {
+                    background-color: #f74780;
+                    color: white;
+                }
+            }
+        }
+
+    }
+
+}
+
+.Testimonials {
+    min-height: 580px;
+    width: 100%;
+    height: auto;
+    background-color: #f6f6fa;
+
+    .content {
+        h4 {
+
+            font-family: "Plus Jakarta Sans", sans-serif;
+            font-size: clamp(22px, 1.8vw, 24px);
+            letter-spacing: normal;
+            line-height: 28.8px;
+            color: rgb(247, 71, 128);
+            text-align: center;
+        }
+
+        h1 {
+            font-family: "Plus Jakarta Sans", sans-serif;
+            font-size: clamp(35px, 5vw, 48px);
+            font-weight: 700;
+            color: rgb(53, 63, 79);
+            margin: 0px 0px 24px;
+            text-align: center;
+        }
+
+        p {
+            font-family: Rubik, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            margin: 0px 0px 24px;
+            padding: 0px;
+            color: #757575;
+            text-align: center;
+        }
+
+        .profileSlider {
+            text-align: center;
+
+            .carousel-indicators {
+                max-width: 100%;
+                position: static;
+                margin-top: 20px;
+                gap: 20px;
+            }
+
+            .carousel-indicators button.indicator-img {
+                border: none;
+                background: none;
+                padding: 0;
+                margin: 0 5px;
+                transition: 0.3s;
+            }
+
+            .carousel-indicators button.indicator-img img {
+                object-fit: cover;
+            }
+
+            .carousel-indicators button.indicator-img.active img {
+                border: 2px solid #6610f2;
+                scale: 250%;
+            }
+
+            .carousel-indicators [data-bs-target]:not(.indicator-img) {
+                display: none !important;
+            }
+
+
+            .sliderContainer {
+                .imgContainer {
+                    img {
+                        border: 3px solid #f74780;
+                    }
+
+                    h5 {
+                        font-family: "Plus Jakarta Sans", sans-serif;
+                        font-size: 20px;
+                        font-weight: 500;
+                        line-height: 24px;
+                        text-align: center;
+                        margin: 0px 0px 8px;
+                    }
+
+                    p {
+                        font-family: Rubik, sans-serif;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 24px;
+                        text-align: center;
+                        color: rgb(117, 117, 117);
+                        margin: 0px;
+                        padding: 0px;
+                    }
+                }
+
+                p {
+                    font-family: Rubik, sans-serif;
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 30px;
+                    text-align: center;
+                    color: rgb(117, 117, 117);
+                    margin: 0px 0px 16px;
+                    padding: 0px;
+
+
+                }
+
+                .stars {
+                    i {
+                        font-size: 16px;
+                        font-weight: 900;
+                        color: rgb(247, 71, 128);
+                        margin: 0px;
+                        padding: 0px;
+                    }
+                }
+            }
+
+            .carousel-control-prev,
+            .carousel-control-next {
+                width: 50px;
+                height: 50px;
+                background-color: #e9e1f9;
+                border-radius: 50%;
+                top: 50%;
+                transform: translateY(-50%);
+                opacity: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #f74780;
+                font-size: 20px;
+                transition: 0.3s ease;
+            }
+
+            .carousel-control-prev:hover,
+            .carousel-control-next:hover {
+                background-color: #d93e6e;
+                color: white;
+            }
+
         }
     }
 }
