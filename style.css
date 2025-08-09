@@ -1226,6 +1226,7 @@ header.scrolled {
                 position: static;
                 margin-top: 20px;
                 gap: 20px;
+                display: flex;
             }
 
             .carousel-indicators button.indicator-img {
@@ -1248,6 +1249,11 @@ header.scrolled {
             .carousel-indicators [data-bs-target]:not(.indicator-img) {
                 display: none !important;
             }
+
+            .carousel-indicators [data-bs-target] {
+                text-indent: 0;
+            }
+
 
 
             .sliderContainer {
@@ -1279,7 +1285,7 @@ header.scrolled {
 
                 p {
                     font-family: Rubik, sans-serif;
-                    font-size: 20px;
+                    font-size: clamp(16px, 2vw, 20px);
                     font-weight: 400;
                     line-height: 30px;
                     text-align: center;
@@ -1478,4 +1484,27 @@ footer {
             ;
         }
     }
+}
+
+.back-to-top {
+    height: 56px;
+    width: 56px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #f74780;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 9999;
+    display: none;
+    transition: opacity 0.3s ease;
+}
+
+.back-to-top:hover {
+    background: white;
+    outline: 1px solid #f74780;
+    color: #f74780;
 }
