@@ -41,6 +41,7 @@ header {
                 line-height: 24px;
                 color: #757575;
 
+
                 &:hover {
                     color: #f74780
                 }
@@ -50,6 +51,62 @@ header {
             #active {
                 color: #f74780
             }
+
+            .pages {
+
+                i {
+                    font-size: 16px;
+                    color: #757575;
+                }
+
+                &:hover {
+                    i {
+                        color: #f74780;
+                    }
+                }
+
+            }
+
+            .pages-wrapper {
+                position: relative;
+                display: inline-block;
+            }
+
+            .pages-list {
+                position: absolute;
+                width: 150px;
+                top: 100%;
+                left: 0;
+                background: #f6f6fa;
+                list-style: none;
+                padding: 0;
+               
+                opacity: 0;
+                transform: translateY(-10px);
+                pointer-events: none;
+                transition: opacity 0.3s ease, transform 0.3s ease;
+                z-index: 1000;
+            }
+
+            .pages-wrapper:hover .pages-list {
+                opacity: 1;
+                transform: translateY(0);
+                pointer-events: auto;
+            }
+
+            .pages-list li {
+                padding: 8px 8px;
+                cursor: pointer;
+                font-family: 'Plus jakarta sans';
+            }
+
+            .pages-list li:hover {
+                background:#f74780;
+                color: white;
+            }
+
+
+
         }
 
         .lognBtn {
@@ -203,65 +260,189 @@ header.scrolled {
 }
 
 .heroSection {
-    .left-side {
-        height: 347.729px;
-        width: 596.333px;
-        margin: 48px 0 0 0;
-        padding: 0 12px 0 12px;
-        min-height: auto;
-        max-width: 100%;
-        min-width: auto;
+    .hero-bg-shapes {
+        position: relative;
+        overflow: hidden;
 
-        h1 {
-
-            font-family: "Plus Jakarta Sans", sans-serif;
-            font-size: clamp(40px, 5vw, 56px);
-            font-weight: 700;
-            text-align: start;
-            color: rgb(53, 63, 79);
-            margin: 0 0 24px 0;
+        .triangle {
+            position: absolute;
+            z-index: 0;
+            top: 0px;
+            left: 50px;
+            animation: triangleMove 50s infinite ease-in-out;
         }
 
-        p {
-
-            font-family: Rubik, sans-serif;
-            font-size: clamp(22px, 2.2vw, 24px);
-            font-weight: 400;
-            letter-spacing: normal;
-            text-align: start;
-            color: rgb(117, 117, 117);
+        .smallCircle {
+            font-size: 50px;
+            color: rgba(247, 71, 128, 0.1);
+            position: absolute;
+            z-index: 0;
+            top: 200px;
+            left: 50px;
+            animation: circlePath 50s infinite ease-in-out;
         }
 
-        .startBtn {
-            font-family: Rubik, sans-serif;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 24px;
-            text-align: center;
-            background-color: rgb(247, 71, 128);
-            background-image: none;
-            background-position: 0% 0%;
-            background-repeat: repeat;
-            color: rgb(255, 255, 255);
-            height: 57.3333px;
-            width: 183.177px;
-            border: 0.666667px solid rgb(247, 71, 128);
-            margin: 0px;
-            padding: 16px 48px;
-            outline: rgb(255, 255, 255) dashed 0px;
-            border-radius: 800px;
+        .bigCircle {
+            font-size: 200px;
+            color: rgba(247, 71, 128, 0.1);
+            position: absolute;
+            z-index: 0;
+            bottom: 0px;
+            left: 50px;
+            animation: circlePath 50s infinite ease-in-out;
+        }
 
-            &:hover {
-                background-color: white;
-                color: #f74780;
+        .secondTriangle,
+        .biggerCircle {
+            position: absolute;
+            z-index: 0;
+            top: 200px;
+            left: 350px;
+            animation: floaty 50s infinite ease-in-out;
+
+        }
+
+        .biggerCircle {
+            font-size: 400px;
+            color: #f7f3fe;
+
+        }
+
+        .left-side {
+            height: 347.729px;
+            width: 596.333px;
+            margin: 48px 0 0 0;
+            padding: 0 12px 0 12px;
+            min-height: auto;
+            max-width: 100%;
+            min-width: auto;
+            z-index: 10;
+
+            h1 {
+
+                font-family: "Plus Jakarta Sans", sans-serif;
+                font-size: clamp(40px, 5vw, 56px);
+                font-weight: 700;
+                text-align: start;
+                color: rgb(53, 63, 79);
+                margin: 0 0 24px 0;
             }
+
+            p {
+
+                font-family: Rubik, sans-serif;
+                font-size: clamp(22px, 2.2vw, 24px);
+                font-weight: 400;
+                letter-spacing: normal;
+                text-align: start;
+                color: rgb(117, 117, 117);
+            }
+
+            .startBtn {
+                font-family: Rubik, sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                text-align: center;
+                background-color: rgb(247, 71, 128);
+                background-image: none;
+                background-position: 0% 0%;
+                background-repeat: repeat;
+                color: rgb(255, 255, 255);
+                height: 57.3333px;
+                width: 183.177px;
+                border: 0.666667px solid rgb(247, 71, 128);
+                margin: 0px;
+                padding: 16px 48px;
+                outline: rgb(255, 255, 255) dashed 0px;
+                border-radius: 800px;
+
+                &:hover {
+                    background-color: white;
+                    color: #f74780;
+                }
+            }
+
         }
 
+        .right-side {
+            z-index: 10;
+            height: 381.552px;
+            width: 572.333px;
+            animation: sideMove 3s infinite ease-in-out;
+        }
+    }
+}
+
+@keyframes triangleMove {
+    0% {
+        transform: translateX(0);
     }
 
-    .right-side {
-        height: 381.552px;
-        width: 572.333px
+    50% {
+        transform: translateX(300px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes circlePath {
+    0% {
+        transform: translate(-50px, -50px) rotate(-5deg);
+    }
+
+    25% {
+        transform: translate(200px, -20px) rotate(5deg);
+    }
+
+    50% {
+        transform: translate(150px, 150px) rotate(-5deg);
+    }
+
+    75% {
+        transform: translate(-20px, 50px) rotate(5deg);
+    }
+
+    100% {
+        transform: translate(-50px, -50px) rotate(-5deg);
+    }
+}
+
+@keyframes floaty {
+    0% {
+        transform: translate(-10px, -60px) rotate(-5deg);
+    }
+
+    25% {
+        transform: translate(20px, 0px) rotate(3deg);
+    }
+
+    50% {
+        transform: translate(-15px, 80px) rotate(-4deg);
+    }
+
+    75% {
+        transform: translate(10px, 0px) rotate(2deg);
+    }
+
+    100% {
+        transform: translate(-10px, -60px) rotate(-5deg);
+    }
+}
+
+@keyframes sideMove {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(15px);
+    }
+
+    100% {
+        transform: translateX(0);
     }
 }
 
@@ -271,6 +452,7 @@ header.scrolled {
         height: 388.354px;
         width: 534px;
         max-width: 100%;
+        animation: sideMove 3s infinite ease-in-out;
     }
 
     .right-side {
@@ -291,7 +473,7 @@ header.scrolled {
 
         h1 {
             font-family: "Plus Jakarta Sans", sans-serif;
-            font-size: clamp(35px, 5vw, 48px);
+            font-size: clamp(32px, 5vw, 48px);
             font-weight: 700;
             color: rgb(53, 63, 79);
             margin: 0px 0px 24px;
@@ -618,6 +800,7 @@ header.scrolled {
             min-height: 465.312px;
             max-width: 534px;
             width: 100%;
+            animation: sideMove 3s infinite ease-in-out;
         }
     }
 
@@ -788,6 +971,7 @@ header.scrolled {
             max-width: 100%;
             margin: 0px;
             padding: 0px;
+            animation: sideMove 3s infinite ease-in-out;
         }
     }
 }
@@ -1044,6 +1228,9 @@ header.scrolled {
                 width: 261px;
                 max-width: 100%;
                 position: relative;
+                overflow: hidden;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
 
                 @media (max-width: 767.98px) {
 
@@ -1059,11 +1246,12 @@ header.scrolled {
                     position: absolute;
                     top: 0px;
                     left: 0px;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
 
                     &:hover {
                         background-color: rgba(0, 0, 0, 0.3);
-                        border-top-left-radius: 10px;
-                        border-top-right-radius: 10px;
+
 
 
                     }
@@ -1081,6 +1269,13 @@ header.scrolled {
                     border-top-left-radius: 10px;
                     border-top-right-radius: 10px;
                     z-index: 1;
+                    transition: transform 0.5s ease;
+
+
+                }
+
+                &:hover img {
+                    transform: scale(1.3);
 
                 }
 
@@ -1370,12 +1565,14 @@ header.scrolled {
                 font-weight: 400;
                 line-height: 35px;
                 text-align: start;
-                transition: 0.5s;
+                transition: letter-spacing 0.3s ease;
                 color: #353F4F;
                 text-decoration: none;
 
                 &:hover {
                     color: #f74780;
+                    letter-spacing: 2px;
+
 
                 }
             }
@@ -1507,4 +1704,205 @@ footer {
     background: white;
     outline: 1px solid #f74780;
     color: #f74780;
+}
+
+
+/****************************** About page***************************/
+.aboutHeader {
+    background-color: #f7f3fe;
+}
+
+.aboutHeroSection {
+    min-height: 370px;
+    width: 100%;
+    background-color: #f7f3fe;
+    position: relative;
+    overflow: hidden;
+
+    .heroContainer {
+        width: 100%;
+        height: 100%;
+
+
+        h3 {
+
+            font-family: "Plus Jakarta Sans", sans-serif;
+            font-size: clamp(40px, 6vw, 70px);
+            font-weight: 700;
+            text-align: start;
+            color: rgb(53, 63, 79);
+            margin-top: 50px;
+            z-index: 10;
+        }
+
+        .breadcrumbnav {
+            ol {
+                li {
+                    a {
+                        font-family: Rubik, sans-serif;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-variant: normal;
+                        font-weight: 400;
+                        letter-spacing: normal;
+                        line-height: 24px;
+                        text-decoration: none;
+                        text-align: center;
+                        color: #353F4F;
+                        position: relative;
+                        z-index: 2;
+                        z-index: 10;
+                    }
+                }
+
+                .active {
+                    color: #F74780;
+                    font-family: Rubik, sans-serif;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-variant: normal;
+                    font-weight: 400;
+                    letter-spacing: normal;
+                    line-height: 24px;
+                    z-index: 10;
+                }
+            }
+        }
+    }
+
+    .about-hero-bg-shapes {
+
+
+        .rightCircle,
+        .leftCircle {
+            font-size: 700px;
+            color: transparent;
+            position: absolute;
+            z-index: 5;
+            animation: moveUp 2s ease-in-out infinite alternate;
+
+
+        }
+
+        .rightCircle {
+            color: #f8ecfa;
+            opacity: 0.5;
+            right: -300px
+        }
+
+        .leftCircle {
+            color: #f7eaf8;
+            opacity: 0.5;
+            left: -300px;
+        }
+
+        .square {
+            color: #f0e6fe;
+            position: absolute;
+            z-index: 0;
+            transform: translateX(-50%);
+
+        }
+
+        #sq1 {
+            font-size: 30px;
+            bottom: -50px;
+            left: 200px;
+            animation: moveUpRotate 18s linear infinite;
+            animation-delay: 0s;
+        }
+
+        #sq2 {
+            font-size: 90px;
+            bottom: -80px;
+            left: 340px;
+            animation: moveUpRotate 25s linear infinite;
+            animation-delay: 3s;
+        }
+
+        #sq3 {
+            font-size: 50px;
+            bottom: -40px;
+            left: 60%;
+            animation: moveUpRotate 15s linear infinite;
+            animation-delay: 5s;
+        }
+
+        #sq4 {
+            font-size: 25px;
+            bottom: -70px;
+            right: 330px;
+            animation: moveUpRotate 20s linear infinite;
+            animation-delay: 7s;
+        }
+
+        #sq5 {
+            font-size: 180px;
+            bottom: -120px;
+            right: 150px;
+            animation: moveUpRotate 28s linear infinite;
+            animation-delay: 2s;
+        }
+
+        #sq6 {
+            font-size: 35px;
+            bottom: -160px;
+            left: 45%;
+            animation: moveUpRotate 12s linear infinite;
+            animation-delay: 6s;
+        }
+
+        #sq7 {
+            font-size: 20px;
+            bottom: -170px;
+            right: 15%;
+            animation: moveUpRotate 22s linear infinite;
+            animation-delay: 4s;
+        }
+
+        #sq8 {
+            font-size: 65px;
+            bottom: -130px;
+            right: 48%;
+            animation: moveUpRotate 17s linear infinite;
+            animation-delay: 8s;
+        }
+
+        #sq9 {
+            font-size: 25px;
+            bottom: -150px;
+            left: 8%;
+            animation: moveUpRotate 14s linear infinite;
+            animation-delay: 1s;
+        }
+
+        #sq10 {
+            font-size: 110px;
+            bottom: -140px;
+            left: 25%;
+            animation: moveUpRotate 19s linear infinite;
+            animation-delay: 9s;
+        }
+
+    }
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes moveUpRotate {
+    0% {
+        transform: translateX(-50%) translateY(0) rotate(0deg);
+    }
+
+    100% {
+        transform: translateX(-50%) translateY(-110vh) rotate(720deg);
+    }
 }
