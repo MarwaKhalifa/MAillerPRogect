@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>Blog</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,7 +17,7 @@
 
 <body>
 
-    <header class="position-sticky top-0 p-2">
+    <header class="aboutHeader position-sticky top-0 p-2">
         <div class="container-fluid d-flex align-items-center justify-content-between ">
             <div class="left-side d-flex align-items-center justify-content-between gap-3">
                 <i class="bi bi-envelope-fill"></i>
@@ -25,11 +25,43 @@
             </div>
             <div class="right-side d-none d-md-flex align-items-center gap-5">
                 <nav class="d-flex align-items-center justify-content-between">
-                    <a href="">Home</a>
-                    <a id="active" href="">About</a>
-                    <a href="">Services</a>
-                    <a href="">Pages</a>
-                    <a href="">Contact</a>
+                    <a href="index.html">Home</a>
+                    <a href="About.html">About</a>
+                    <a href="services.html">Services</a>
+
+                    <div class="pages-wrapper d-flex align-items-center gap-1">
+                        <a class="pages " id="active" href="">Pages
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                        <ul class="pages-list">
+                            <li>
+                                <a href="feature.html">
+                                    Feature
+                                </a>
+                            </li>
+                            <li>
+                                <a href="pricing.html">
+                                    Pricing
+                                </a>
+                            </li>
+                            <li>
+                                <a href="blog.html">
+                                    Blog
+                                </a>
+                            </li>
+                            <li>
+                                <a href="testemonial.html">
+                                    Testemonial
+                                </a>
+                            </li>
+                            <li>
+                                <a href="page404.html">
+                                    404 Page
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="contact.html">Contact</a>
                 </nav>
                 <div>
                     <button class="lognBtn"> Log In</button>
@@ -47,11 +79,11 @@
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body d-flex flex-column align-items-start gap-3 ">
-                        <a href="">Home</a>
-                        <a id="active" href="">About</a>
-                        <a href="">Services</a>
-                        <a href="">Pages</a>
-                        <a href="">Contact</a>
+                        <a href="index.html">Home</a>
+                        <a href="About.html">About</a>
+                        <a href="services.html">Services</a>
+                        <a id="active" href="blog.html">Pages</a>
+                        <a href="contact.html">Contact</a>
                         <div class="registerBtn d-flex align-items-center justify-content-between ">
                             <button class="lognBtn"> Log In</button>
                             <button class="signBtn">Sign Up</button>
@@ -78,152 +110,19 @@
             <i id="sq10" class=" square fa-solid fa-square"></i>
             <div
                 class=" heroContainer container-fluid col-12 p-5 d-flex flex-column align-items-center justify-content-center ">
-                <h3>About Us</h3>
+                <h3>Our Blog </h3>
                 <nav aria-label="breadcrumb"
                     class="breadcrumbnav col-12 d-flex align-items-center justify-content-center">
                     <ol class="breadcrumb mb-0 d-flex align-items-center justify-content-center">
                         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                         <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">About</li>
+                        <li class="breadcrumb-item active" aria-current="page">Blog</li>
                     </ol>
                 </nav>
             </div>
         </div>
     </section>
     <!-- End of Hero Section-->
-
-
-    <!--Start of About Section-->
-    <Section class="about container py-5">
-        <div class="d-flex flex-wrap align-items-center justify-content-between py-5">
-            <div class="left-side py-5 " data-aos="fade-up" data-aos-duration="1000 ">
-                <img class="img-fluid" src="./images/about-1.png" alt="">
-            </div>
-            <div class="right-side py-5" data-aos="fade-up" data-aos-duration="1000">
-                <h4>About Us</h4>
-                <h1>Get Started Easily With a Personalized Product Tour</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, suscipit itaque quaerat dicta
-                    porro illum, autem, molestias ut animi ab aspernatur dolorum officia nam dolore. Voluptatibus
-                    aliquam earum labore atque.</p>
-                <button class="btnAbout">About More</button>
-            </div>
-
-        </div>
-    </Section>
-    <!--End of About Section-->
-
-
-
-    <!--Start of Features Section-->
-    <section class="Features container py-5">
-        <div class="serviceTxt d-flex flex-column flex-wrap align-items-center justify-content-center py-5"
-            data-aos="fade-up">
-            <h4>Our Feature</h4>
-            <h1 class="mb-4">Important Features For Email Marketing</h1>
-            <p>Dolor sit amet consectetur, adipisicing elit. Ipsam, beatae maxime. Vel animi eveniet doloremque
-                reiciendis soluta iste provident non rerum illum perferendis earum est architecto dolores vitae quia
-                vero quod incidunt culpa corporis, porro doloribus. Voluptates nemo doloremque cum.</p>
-        </div>
-
-        <div class="py-5">
-            <div class="serviceCards d-flex flex-wrap align-items-start justify-content-between gap-4 ">
-                <div class="card-container  p-2" data-aos="fade-up" data-aos-delay="0">
-                    <div class="  h-100 d-flex flex-column align-items-center justify-content-center p-3">
-                        <div class="service-icon-container p-4 mb-4">
-                            <i class="card-icon fa-solid fa-envelope"></i>
-                        </div>
-                        <a class="mb-4 d-flex align-items-center justify-content-center">Email Marketing
-                            <i class=" arrow fa-solid fa-right-long"></i>
-                        </a>
-                        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.consectetur adipisicing
-                            elit</p>
-                    </div>
-                </div>
-
-                <div class="card-container  p-2" data-aos="fade-up" data-aos-delay="100">
-                    <div class="  h-100 d-flex flex-column align-items-center justify-content-center p-3">
-                        <div class="service-icon-container p-4 mb-4">
-                            <i class="card-icon fa-solid fa-envelopes-bulk"></i>
-                        </div>
-                        <a class="mb-4">Email Builder
-                            <i class=" arrow fa-solid fa-right-long"></i>
-                        </a>
-                        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.consectetur adipisicing
-                            elit</p>
-                    </div>
-                </div>
-
-                <div class="card-container  p-2" data-aos="fade-up" data-aos-delay="200">
-                    <div class="  h-100 d-flex flex-column align-items-center justify-content-center p-3">
-                        <div class="service-icon-container p-4 mb-4">
-                            <i class="card-icon fa-solid fa-sitemap"></i>
-                        </div>
-                        <a class="mb-4">Customer Builder
-                            <i class=" arrow fa-solid fa-right-long"></i>
-                        </a>
-                        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.consectetur adipisicing
-                            elit</p>
-                    </div>
-                </div>
-
-                <div class="card-container  p-2" data-aos="fade-up" data-aos-delay="300">
-                    <div class="  h-100 d-flex flex-column align-items-center justify-content-center p-3">
-                        <div class="service-icon-container p-4 mb-4">
-                            <i class="card-icon fa-solid fa-list-check"></i>
-                        </div>
-                        <a class="mb-4">Campaign Manager
-                            <i class=" arrow fa-solid fa-right-long"></i>
-                        </a>
-                        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.consectetur adipisicing
-                            elit</p>
-                    </div>
-                </div>
-                <div class="d-flex align-items-center justify-content-center w-100" data-aos="fade-up"
-                    data-aos-delay="400">
-                    <button class="featureBtn px-5 py-3">More Features</button>
-                </div>
-            </div>
-    </section>
-    <!--End of Features Section-->
-
-
-    <!--Animation Feature Div-->
-    <section class="featureDiv container py-5 ">
-        <div class="d-flex flex-wrap align-items-center justify-content-between py-5">
-            <div class="animated-bg d-flex align-content-center justify-content-center" data-aos="fade-up">
-                <img class="img-fluid" src="./images/hero-img-1.png" alt="">
-            </div>
-            <div class="txt-side d-flex flex-column align-items-start justify-content-start" data-aos="fade-up">
-                <h4>Fearutes</h4>
-                <h1 class="mb-4 ">Push Your Visitors Into Happy Customers</h1>
-                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, suscipit itaque
-                    quaerat dicta porro illum, autem, molestias ut animi ab aspernatur dolorum officia nam dolore.
-                    Voluptatibus aliquam earum labore atque.</p>
-                <div class="d-flex align-items-center justify-content-between gap-3"
-                    style="width: 585; max-width: 100%;">
-                    <div class="newspaperDiv d-flex align-items-start justify-content-start gap-3">
-                        <i class="fa-solid fa-newspaper"></i>
-                        <div class="d-flex flex-column align-items-start justify-content-start">
-                            <h2>285</h2>
-                            <span>Created Projects</span>
-                        </div>
-                    </div>
-                    <div class="newspaperDiv d-flex align-items-start justify-content-start gap-3">
-                        <i class="fa-solid fa-users"></i>
-                        <div class="d-flex flex-column align-items-start justify-content-start">
-                            <h2>6560</h2>
-                            <span>Happy Clients</span>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="py-4">
-                    <button class="readBtn py-3 px-5"> Read More</button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--End Animation div-->
 
     <!--Blog Section-->
     <section class="blogs p-5">
@@ -478,9 +377,26 @@
         });
         AOS.init();
     </script>
-   
+    <script>
+        const backToTop = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', () => {
+            const headerHeight = document.querySelector('.aboutHeroSection').offsetHeight;
+
+            if (window.scrollY > headerHeight) {
+                backToTop.style.display = 'block';
+            } else {
+                backToTop.style.display = 'none';
+            }
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
     </script>
-   
+
+
 
 </body>
 

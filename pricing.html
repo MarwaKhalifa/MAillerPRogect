@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>Pricing</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -26,11 +26,11 @@
             <div class="right-side d-none d-md-flex align-items-center gap-5">
                 <nav class="d-flex align-items-center justify-content-between">
                     <a href="index.html">Home</a>
-                    <a id="active" href="#">About</a>
+                    <a href="About.html">About</a>
                     <a href="services.html">Services</a>
 
                     <div class="pages-wrapper d-flex align-items-center gap-1">
-                        <a class="pages" href="">Pages
+                        <a class="pages " id="active" href="">Pages
                             <i class="fa-solid fa-angle-down"></i>
                         </a>
                         <ul class="pages-list">
@@ -75,14 +75,14 @@
 
                 <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop"
                     aria-labelledby="offcanvasTopLabel">
-                    <div class="offcanvas-header" >
+                    <div class="offcanvas-header">
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body d-flex flex-column align-items-start gap-3 ">
                         <a href="index.html">Home</a>
-                        <a id="active" href="About.html">About</a>
+                        <a href="About.html">About</a>
                         <a href="services.html">Services</a>
-                        <a href="feature.html">Pages</a>
+                        <a id="active" href="pricing.html">Pages</a>
                         <a href="contact.html">Contact</a>
                         <div class="registerBtn d-flex align-items-center justify-content-between ">
                             <button class="lognBtn"> Log In</button>
@@ -110,13 +110,13 @@
             <i id="sq10" class=" square fa-solid fa-square"></i>
             <div
                 class=" heroContainer container-fluid col-12 p-5 d-flex flex-column align-items-center justify-content-center ">
-                <h3>About Us</h3>
+                <h3>Our Price Plan</h3>
                 <nav aria-label="breadcrumb"
                     class="breadcrumbnav col-12 d-flex align-items-center justify-content-center">
                     <ol class="breadcrumb mb-0 d-flex align-items-center justify-content-center">
                         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                         <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">About</li>
+                        <li class="breadcrumb-item active" aria-current="page">Price</li>
                     </ol>
                 </nav>
             </div>
@@ -124,30 +124,283 @@
     </section>
     <!-- End of Hero Section-->
 
+    <!--Start of Pricing plan-->
+    <section class="pricingSection container py-5 ">
+        <div class="upperText d-flex flex-column align-items-center justify-content-center gap-2 p-5 "
+            data-aos="fade-up">
+            <h4>Pricing Plan</h4>
+            <h1>Not Sure Which Plan Is For You?</h1>
+            <p class="mb-5">Dolor sit amet consectetur, adipisicing elit. Ipsam, beatae maxime. Vel animi eveniet
+                doloremque reiciendis soluta iste provident non rerum illum perferendis earum est architecto dolores
+                vitae quia vero quod incidunt culpa corporis, porro doloribus. Voluptates nemo doloremque cum.</p>
+        </div>
+        <div class="pricingCards d-flex flex-wrap align-items-start justify-content-between gap-5 ">
+            <div class="priceCardPlan mt-3" data-aos="fade-up" data-aos-delay="0">
+                <div class="cardContainer">
+                    <div class="upperCard d-flex flex-column align-items-center justify-content-center">
+                        <p class="mb-0">BASIC</p>
+                        <div class=" d-flex align-items-center">
+                            <sup>$</sup>
+                            <div>
+                                <span>00</span>
+                                <sub>/mo</sub>
+                            </div>
+                        </div>
 
-    <!--Start of About Section-->
-    <Section class="about container py-5">
-        <div class="d-flex flex-wrap align-items-center justify-content-between py-5">
-            <div class="left-side py-5 " data-aos="fade-up" data-aos-duration="1000 ">
+                    </div>
+                    <div class="lowerCard p-5">
+                        <div class="d-flex align-items-start gap-2">
+                            <i class=" checktrue fa-solid fa-check"></i>
+                            <p>Customer Support</p>
+                        </div>
+                        <div class="d-flex align-items-start gap-2">
+                            <i class="checktrue  fa-solid fa-check"></i>
+                            <p>Limited Acess Library</p>
+                        </div>
+                        <div class="d-flex align-items-start gap-2">
+                            <i class="checktrue  fa-solid fa-check"></i>
+                            <p>Pre-built Email Templates</p>
+                        </div>
+                        <div class="d-flex align-items-cstartgap-2">
+                            <i class="checktrue  fa-solid fa-check"></i>
+                            <p>Reporting & Analytics</p>
+                        </div>
+                        <div class="d-flex align-items-start gap-2">
+                            <i class=" checktrue fa-solid fa-check"></i>
+                            <p>Forms & Landing Pages</p>
+                        </div>
+                        <div class="d-flex align-items-start gap-2">
+                            <i class="checktrue  fa-solid fa-check"></i>
+                            <p>A/B Testing</p>
+                        </div>
+                        <div class="d-flex align-items-start gap-2">
+                            <i class="checktrue  fa-solid fa-check"></i>
+                            <p>Email Scheduling</p>
+                        </div>
+                        <div class="d-flex align-items-start gap-2">
+                            <i class="checktrue  fa-solid fa-check"></i>
+                            <p class="text-start">Automated Customer Journeys</p>
+                        </div>
+                        <div class="d-flex align-items-start  gap-2">
+                            <i class=" checkfalse fa fa-times me-1" aria-hidden="true"></i>
+                            <p>Creative Assistant</p>
+                        </div>
+                        <div class="d-flex align-items-start gap-2 me-1">
+                            <i class=" checkfalse fa fa-times" aria-hidden="true"></i>
+                            <p>Role-based Access</p>
+                        </div>
+                        <div>
+                            <button class="startBtn py-2 px-5"> Get Started</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="priceCardPlan mt-3" data-aos="fade-up" data-aos-delay="100">
+                <div class="cardContainer">
+                    <div class="upperCard d-flex flex-column align-items-center justify-content-center">
+                        <p class="pinccolor mb-0">STANDARD</p>
+                        <div class=" d-flex align-items-center">
+                            <sup class="pinccolor">$</sup>
+                            <div>
+                                <span class="pinccolor">23</span>
+                                <sub class="pinccolor">/mo</sub>
+                            </div>
+                        </div>
+                        <!--offer traiangle-->
+                        <div class="triangle">
+                            <span>Popular</span>
+                        </div>
+                    </div>
+                    <div class="lowerCard p-5">
+                        <div class="d-flex align-items-start gap-2">
+                            <i class=" checktrue fa-solid fa-check"></i>
+                            <p>Customer Support</p>
+                        </div>
+                        <div class="d-flex align-items-start gap-2">
+                            <i class="checktrue  fa-solid fa-check"></i>
+                            <p>Limited Acess Library</p>
+                        </div>
+                        <div class="d-flex align-items-start gap-2">
+                            <i class="checktrue  fa-solid fa-check"></i>
+                            <p>Pre-built Email Templates</p>
+                        </div>
+                        <div class="d-flex align-items-cstartgap-2">
+                            <i class="checktrue  fa-solid fa-check"></i>
+                            <p>Reporting & Analytics</p>
+                        </div>
+                        <div class="d-flex align-items-start gap-2">
+                            <i class=" checktrue fa-solid fa-check"></i>
+                            <p>Forms & Landing Pages</p>
+                        </div>
+                        <div class="d-flex align-items-start gap-2">
+                            <i class="checktrue  fa-solid fa-check"></i>
+                            <p>A/B Testing</p>
+                        </div>
+                        <div class="d-flex align-items-start gap-2">
+                            <i class="checktrue  fa-solid fa-check"></i>
+                            <p>Email Scheduling</p>
+                        </div>
+                        <div class="d-flex align-items-start gap-2">
+                            <i class="checktrue  fa-solid fa-check"></i>
+                            <p class="text-start">Automated Customer Journeys</p>
+                        </div>
+                        <div class="d-flex align-items-start  gap-2">
+                            <i class=" checkfalse fa fa-times me-1" aria-hidden="true"></i>
+                            <p>Creative Assistant</p>
+                        </div>
+                        <div class="d-flex align-items-start gap-2 me-1">
+                            <i class=" checkfalse fa fa-times" aria-hidden="true"></i>
+                            <p>Role-based Access</p>
+                        </div>
+                        <div>
+                            <button class="startBtn py-2 px-5"> Get Started</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="priceCardPlan mt-3" data-aos="fade-up" data-aos-delay="200">
+                <div class="cardContainer">
+                    <div class=" upperCard d-flex flex-column align-items-center justify-content-center">
+                        <p class=" purpleColor mb-0">PREMIEUM</p>
+                        <div class=" d-flex align-items-center">
+                            <sup class="purpleColor">$</sup>
+                            <div>
+                                <span class="purpleColor">49</span>
+                                <sub class="purpleColor">/mo</sub>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="lowerCard p-5">
+                        <div class="d-flex align-items-start gap-2">
+                            <i class=" checktrue fa-solid fa-check"></i>
+                            <p>Customer Support</p>
+                        </div>
+                        <div class="d-flex align-items-start gap-2">
+                            <i class="checktrue  fa-solid fa-check"></i>
+                            <p>Limited Acess Library</p>
+                        </div>
+                        <div class="d-flex align-items-start gap-2">
+                            <i class="checktrue  fa-solid fa-check"></i>
+                            <p>Pre-built Email Templates</p>
+                        </div>
+                        <div class="d-flex align-items-cstartgap-2">
+                            <i class="checktrue  fa-solid fa-check"></i>
+                            <p>Reporting & Analytics</p>
+                        </div>
+                        <div class="d-flex align-items-start gap-2">
+                            <i class=" checktrue fa-solid fa-check"></i>
+                            <p>Forms & Landing Pages</p>
+                        </div>
+                        <div class="d-flex align-items-start gap-2">
+                            <i class="checktrue  fa-solid fa-check"></i>
+                            <p>A/B Testing</p>
+                        </div>
+                        <div class="d-flex align-items-start gap-2">
+                            <i class="checktrue  fa-solid fa-check"></i>
+                            <p>Email Scheduling</p>
+                        </div>
+                        <div class="d-flex align-items-start gap-2">
+                            <i class="checktrue  fa-solid fa-check"></i>
+                            <p class="text-start">Automated Customer Journeys</p>
+                        </div>
+                        <div class="d-flex align-items-start  gap-2">
+                            <i class=" checkfalse fa fa-times me-1" aria-hidden="true"></i>
+                            <p>Creative Assistant</p>
+                        </div>
+                        <div class="d-flex align-items-start gap-2 me-1">
+                            <i class=" checkfalse fa fa-times" aria-hidden="true"></i>
+                            <p>Role-based Access</p>
+                        </div>
+                        <div>
+                            <button class="startBtn py-2 px-5"> Get Started</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    </section>
+    <!--End of Pricing plan-->
+
+
+    <!--Start of FAQ Section-->
+    <section class=" container-fluid FAQsection p-5 d-flex align-items-center justify-content-center">
+        <div class="content container d-flex flex-wrap align-items-center justify-content-between px-4 py-5"
+            style=" max-height: 700px; height: 100vh;">
+            <div class="collapseDiv d-flex flex-column align-items-start justify-content-between gap-4"
+                data-aos="fade-up">
+                <div class="itemCollapse">
+                    <div class="activeCollapse d-flex align-items-center justify-content-between w-100"
+                        data-bs-toggle="collapse" data-bs-target="#collapsDiv1" role="button" aria-expanded="false"
+                        aria-controls="collapsDiv1">
+                        <h4>Why did you choose Our Email Services?</h4>
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+                    <!--collapse body-->
+                    <div class="collapse w-100" id="collapsDiv1">
+                        <div class="card card-body CollapsCardDiv">
+                            <h5>Dolor sit amet consectetur adipisicing elit.</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nemo impedit, sapiente quis
+                                illo quia nulla atque maxime fuga minima ipsa quae cum consequatur, sit, delectus
+                                exercitationem odit officiis maiores! Neque, quidem corrupti modi architecto eos saepe
+                                incidunt dignissimos rerum.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta distinctio hic fuga odio
+                                excepturi ducimus sequi at. Doloribus, non aspernatur.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="itemCollapse">
+                    <div class="activeCollapse  d-flex align-items-center justify-content-between w-100"
+                        data-bs-toggle="collapse" data-bs-target="#collapseDiv2" role="button" aria-expanded="false"
+                        aria-controls="collapseDiv2">
+                        <h4>Are there any hidden charges?</h4>
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+                    <!--collapse body-->
+                    <div class="collapse w-100" id="collapseDiv2">
+                        <div class="card card-body CollapsCardDiv">
+                            <h5>Dolor sit amet consectetur adipisicing elit.</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nemo impedit, sapiente quis
+                                illo quia nulla atque maxime fuga minima ipsa quae cum consequatur, sit, delectus
+                                exercitationem odit officiis maiores! Neque, quidem corrupti modi architecto eos saepe
+                                incidunt dignissimos rerum.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta distinctio hic fuga odio
+                                excepturi ducimus sequi at. Doloribus, non aspernatur.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="itemCollapse">
+                    <div class="activeCollapse d-flex align-items-center justify-content-between w-100"
+                        data-bs-toggle="collapse" data-bs-target="#collapseDiv3" role="button" aria-expanded="false"
+                        aria-controls="collapseDiv3">
+                        <h4>What are the key challenges of email marketing?</h4>
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+                    <!--collapse body-->
+                    <div class="collapse w-100" id="collapseDiv3">
+                        <div class="card card-body CollapsCardDiv">
+                            <h5>Dolor sit amet consectetur adipisicing elit.</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nemo impedit, sapiente quis
+                                illo quia nulla atque maxime fuga minima ipsa quae cum consequatur, sit, delectus
+                                exercitationem odit officiis maiores! Neque, quidem corrupti modi architecto eos saepe
+                                incidunt dignissimos rerum.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta distinctio hic fuga odio
+                                excepturi ducimus sequi at. Doloribus, non aspernatur.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-img" data-aos="fade-up">
                 <img class="img-fluid" src="./images/about-1.png" alt="">
             </div>
-            <div class="right-side py-5" data-aos="fade-up" data-aos-duration="1000">
-                <h4>About Us</h4>
-                <h1>Get Started Easily With a Personalized Product Tour</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, suscipit itaque quaerat dicta
-                    porro illum, autem, molestias ut animi ab aspernatur dolorum officia nam dolore. Voluptatibus
-                    aliquam earum labore atque.</p>
-                <button class="btnAbout">About More</button>
-            </div>
-
         </div>
-    </Section>
-    <!--End of About Section-->
-
-
+    </section>
+    <!--End of FAQ Section-->
 
     <!--Start of Features Section-->
-    <section class="Features container py-5">
+    <section class="Features container py-2">
         <div class="serviceTxt d-flex flex-column flex-wrap align-items-center justify-content-center py-5"
             data-aos="fade-up">
             <h4>Our Feature</h4>
@@ -158,7 +411,7 @@
         </div>
 
         <div class="py-5">
-            <div class="serviceCards d-flex flex-wrap align-items-start justify-content-between gap-4 ">
+            <div class="serviceCards d-flex flex-wrap align-items-start justify-content-between gap-4">
                 <div class="card-container  p-2" data-aos="fade-up" data-aos-delay="0">
                     <div class="  h-100 d-flex flex-column align-items-center justify-content-center p-3">
                         <div class="service-icon-container p-4 mb-4">
@@ -257,144 +510,6 @@
     </section>
     <!--End Animation div-->
 
-    <!--Blog Section-->
-    <section class="blogs p-5">
-        <div class="upperText d-flex flex-column align-items-center justify-content-center gap-2 px-1 py-5 p-md-5"
-            data-aos="fade-up">
-            <h4>Our Blog</h4>
-            <h1>Join Us For New Blog</h1>
-            <p class="mb-5">Dolor sit amet consectetur, adipisicing elit. Ipsam, beatae maxime. Vel animi eveniet
-                doloremque reiciendis soluta iste provident non rerum illum perferendis earum est architecto dolores
-                vitae quia vero quod incidunt culpa corporis, porro doloribus. Voluptates nemo doloremque cum.</p>
-        </div>
-
-        <div class="blogCardsContainer d-flex flex-wrap align-items-center justify-content-center gap-5 gap-md-0 mb-5">
-            <div class="blogCard px-3 d-flex flex-column" data-aos="fade-up" data-aos-delay="0">
-                <div class=" position-relative">
-                    <div class=" overLayDivContainer">
-                        <img class="img-fluid" src="./images/blog-1.png" alt="">
-                        <div class="overLayDiv"></div>
-                    </div>
-                    <div
-                        class="iconContainer position-absolute d-flex align-items-center p-3 justify-content-between bottom-0">
-                        <span>
-                            <i class="fa-solid fa-clock"></i>
-                            Dec 01.2024
-                        </span>
-                        <div>
-                            <span>
-                                3
-                                <i class="fa-solid fa-heart"></i>
-                            </span>
-                            <span>
-                                0
-                                <i class="fa-solid fa-comment"></i>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="blogText p-4">
-                    <h5>Dolor, sit amet consectetur adipisicing</h5>
-                    <p class="mb-4">Lorem ipsum dolor sit amet consectur adip sed eiusmod amet consectur adip.</p>
-                    <button class="py-2 px-4">Read More</button>
-                </div>
-            </div>
-            <div class="blogCard px-3 d-flex flex-column" data-aos="fade-up" data-aos-delay="100">
-                <div class=" position-relative">
-                    <div class=" overLayDivContainer">
-                        <img class="img-fluid" src="./images/blog-2.png" alt="">
-                        <div class="overLayDiv"></div>
-                    </div>
-                    <div
-                        class="iconContainer position-absolute d-flex align-items-center p-3 justify-content-between bottom-0">
-                        <span>
-                            <i class="fa-solid fa-clock"></i>
-                            Dec 01.2024
-                        </span>
-                        <div>
-                            <span>
-                                3
-                                <i class="fa-solid fa-heart"></i>
-                            </span>
-                            <span>
-                                0
-                                <i class="fa-solid fa-comment"></i>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="blogText p-4">
-                    <h5>Dolor, sit amet consectetur adipisicing</h5>
-                    <p class="mb-4">Lorem ipsum dolor sit amet consectur adip sed eiusmod amet consectur adip.</p>
-                    <button class="py-2 px-4">Read More</button>
-                </div>
-            </div>
-            <div class="blogCard px-3 d-flex flex-column" data-aos="fade-up" data-aos-delay="200">
-                <div class=" position-relative">
-                    <div class=" overLayDivContainer">
-                        <img class="img-fluid" src="./images/blog-3.png" alt="">
-                        <div class="overLayDiv"></div>
-                    </div>
-                    <div
-                        class="iconContainer position-absolute d-flex align-items-center p-3 justify-content-between bottom-0">
-                        <span>
-                            <i class="fa-solid fa-clock"></i>
-                            Dec 01.2024
-                        </span>
-                        <div>
-                            <span>
-                                3
-                                <i class="fa-solid fa-heart"></i>
-                            </span>
-                            <span>
-                                0
-                                <i class="fa-solid fa-comment"></i>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="blogText p-4">
-                    <h5>Dolor, sit amet consectetur adipisicing</h5>
-                    <p class="mb-4">Lorem ipsum dolor sit amet consectur adip sed eiusmod amet consectur adip.</p>
-                    <button class="py-2 px-4">Read More</button>
-                </div>
-            </div>
-            <div class="blogCard px-3 d-flex flex-column" data-aos="fade-up" data-aos-delay="300">
-                <div class=" position-relative">
-                    <div class=" overLayDivContainer">
-                        <img class="img-fluid" src="./images/blog-4.png" alt="">
-                        <div class="overLayDiv"></div>
-                    </div>
-                    <div
-                        class="iconContainer position-absolute d-flex align-items-center p-3 justify-content-between bottom-0">
-                        <span>
-                            <i class="fa-solid fa-clock"></i>
-                            Dec 01.2024
-                        </span>
-                        <div>
-                            <span>
-                                3
-                                <i class="fa-solid fa-heart"></i>
-                            </span>
-                            <span>
-                                0
-                                <i class="fa-solid fa-comment"></i>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="blogText p-4">
-                    <h5>Dolor, sit amet consectetur adipisicing</h5>
-                    <p class="mb-4">Lorem ipsum dolor sit amet consectur adip sed eiusmod amet consectur adip.</p>
-                    <button class="py-2 px-4">Read More</button>
-                </div>
-            </div>
-
-
-        </div>
-    </section>
-    <!--End of Blog-->
 
 
 

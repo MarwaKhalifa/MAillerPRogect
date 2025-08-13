@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mailer</title>
+    <title>Service</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,8 +16,8 @@
 </head>
 
 <body>
-    <!--Start of navnar-->
-    <header class="position-sticky top-0 p-2">
+
+    <header class="aboutHeader position-sticky top-0 p-2">
         <div class="container-fluid d-flex align-items-center justify-content-between ">
             <div class="left-side d-flex align-items-center justify-content-between gap-3">
                 <i class="bi bi-envelope-fill"></i>
@@ -25,9 +25,10 @@
             </div>
             <div class="right-side d-none d-md-flex align-items-center gap-5">
                 <nav class="d-flex align-items-center justify-content-between">
-                    <a id="active" href="index.html">Home</a>
+                    <a href="index.html">Home</a>
                     <a href="About.html">About</a>
-                    <a href="services.html">Services</a>
+                    <a id="active" href="">Services</a>
+
                     <div class="pages-wrapper d-flex align-items-center gap-1">
                         <a class="pages" href="">Pages
                             <i class="fa-solid fa-angle-down"></i>
@@ -78,9 +79,9 @@
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body d-flex flex-column align-items-start gap-3 ">
-                        <a id="active" href="index.html">Home</a>
+                        <a href="index.html">Home</a>
                         <a href="About.html">About</a>
-                        <a href="services.html">Services</a>
+                        <a id="active" href="services.html">Services</a>
                         <a href="feature.html">Pages</a>
                         <a href="contact.html">Contact</a>
                         <div class="registerBtn d-flex align-items-center justify-content-between ">
@@ -90,56 +91,38 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
     </header>
-    <!--End of navbar-->
-
     <!--Start of Hero Section-->
-    <section class="heroSection ">
-        <div class="hero-bg-shapes">
-            <img class="triangle" src="./images/sty-1.png" alt="">
-            <i class="smallCircle fa-regular fa-circle"></i>
-            <i class="bigCircle fa-regular fa-circle"></i>
-            <img class="secondTriangle" src="./images/sty-1.png" alt="">
-            <i class="biggerCircle fa-regular fa-circle"></i>
-            <div class="container-fluid col-12 p-5 d-flex flex-wrap align-items-center justify-content-between ">
-                <div class="left-side" data-aos="fade-up-right" data-aos-duration="1000">
-                    <h1>Turn Emails into Revenue</h1>
-                    <p>Win new customers with the #1 email marketing
-                        and automations brand* that recommends ways to
-                        get more opens, clicks, and sales.</p>
-                    <button class="startBtn">Get Started</button>
-                </div>
-                <div class="right-side" data-aos="fade-up" data-aos-duration="1000">
-                    <img class="img-fluid " src="./images/hero-img-1.png" alt="">
-                </div>
+    <section class="aboutHeroSection ">
+        <div class="about-hero-bg-shapes">
+            <i class="rightCircle fa-regular fa-circle"></i>
+            <i class="leftCircle fa-regular fa-circle"></i>
+            <i id="sq1" class=" square fa-solid fa-square"></i>
+            <i id="sq2" class=" square fa-solid fa-square"></i>
+            <i id="sq3" class=" square fa-solid fa-square"></i>
+            <i id="sq4" class=" square fa-solid fa-square"></i>
+            <i id="sq5" class=" square fa-solid fa-square"></i>
+            <i id="sq6" class=" square fa-solid fa-square"></i>
+            <i id="sq7" class=" square fa-solid fa-square"></i>
+            <i id="sq8" class=" square fa-solid fa-square"></i>
+            <i id="sq9" class=" square fa-solid fa-square"></i>
+            <i id="sq10" class=" square fa-solid fa-square"></i>
+            <div
+                class=" heroContainer container-fluid col-12 p-5 d-flex flex-column align-items-center justify-content-center ">
+                <h3>Our Services</h3>
+                <nav aria-label="breadcrumb"
+                    class="breadcrumbnav col-12 d-flex align-items-center justify-content-center">
+                    <ol class="breadcrumb mb-0 d-flex align-items-center justify-content-center">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Services</li>
+                    </ol>
+                </nav>
             </div>
         </div>
     </section>
     <!-- End of Hero Section-->
-
-
-    <!--Start of About Section-->
-    <Section class="about container">
-        <div class="d-flex flex-wrap align-items-center justify-content-between ">
-            <div class="left-side" data-aos="fade-up" data-aos-duration="1000">
-                <img class="img-fluid" src="./images/about-1.png" alt="">
-            </div>
-            <div class="right-side" data-aos="fade-up" data-aos-duration="1000">
-                <h4>About Us</h4>
-                <h1>Get Started Easily With a Personalized Product Tour</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, suscipit itaque quaerat dicta
-                    porro illum, autem, molestias ut animi ab aspernatur dolorum officia nam dolore. Voluptatibus
-                    aliquam earum labore atque.</p>
-                <button class="btnAbout">About More</button>
-            </div>
-
-        </div>
-    </Section>
-    <!--End of About Section-->
-
 
     <!--Start of Service Section-->
     <section class="Service container py-5">
@@ -254,121 +237,6 @@
             </div>
     </section>
     <!--End of Service Section -->
-
-
-
-    <!--Start of Features Section-->
-    <section class="Features container py-2">
-        <div class="serviceTxt d-flex flex-column flex-wrap align-items-center justify-content-center py-5"
-            data-aos="fade-up">
-            <h4>Our Feature</h4>
-            <h1 class="mb-4">Important Features For Email Marketing</h1>
-            <p>Dolor sit amet consectetur, adipisicing elit. Ipsam, beatae maxime. Vel animi eveniet doloremque
-                reiciendis soluta iste provident non rerum illum perferendis earum est architecto dolores vitae quia
-                vero quod incidunt culpa corporis, porro doloribus. Voluptates nemo doloremque cum.</p>
-        </div>
-
-        <div class="py-5">
-            <div class="serviceCards d-flex flex-wrap align-items-start justify-content-between gap-4">
-                <div class="card-container  p-2" data-aos="fade-up" data-aos-delay="0">
-                    <div class="  h-100 d-flex flex-column align-items-center justify-content-center p-3">
-                        <div class="service-icon-container p-4 mb-4">
-                            <i class="card-icon fa-solid fa-envelope"></i>
-                        </div>
-                        <a class="mb-4 d-flex align-items-center justify-content-center">Email Marketing
-                            <i class=" arrow fa-solid fa-right-long"></i>
-                        </a>
-                        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.consectetur adipisicing
-                            elit</p>
-                    </div>
-                </div>
-
-                <div class="card-container  p-2" data-aos="fade-up" data-aos-delay="100">
-                    <div class="  h-100 d-flex flex-column align-items-center justify-content-center p-3">
-                        <div class="service-icon-container p-4 mb-4">
-                            <i class="card-icon fa-solid fa-envelopes-bulk"></i>
-                        </div>
-                        <a class="mb-4">Email Builder
-                            <i class=" arrow fa-solid fa-right-long"></i>
-                        </a>
-                        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.consectetur adipisicing
-                            elit</p>
-                    </div>
-                </div>
-
-                <div class="card-container  p-2" data-aos="fade-up" data-aos-delay="200">
-                    <div class="  h-100 d-flex flex-column align-items-center justify-content-center p-3">
-                        <div class="service-icon-container p-4 mb-4">
-                            <i class="card-icon fa-solid fa-sitemap"></i>
-                        </div>
-                        <a class="mb-4">Customer Builder
-                            <i class=" arrow fa-solid fa-right-long"></i>
-                        </a>
-                        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.consectetur adipisicing
-                            elit</p>
-                    </div>
-                </div>
-
-                <div class="card-container  p-2" data-aos="fade-up" data-aos-delay="300">
-                    <div class="  h-100 d-flex flex-column align-items-center justify-content-center p-3">
-                        <div class="service-icon-container p-4 mb-4">
-                            <i class="card-icon fa-solid fa-list-check"></i>
-                        </div>
-                        <a class="mb-4">Campaign Manager
-                            <i class=" arrow fa-solid fa-right-long"></i>
-                        </a>
-                        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.consectetur adipisicing
-                            elit</p>
-                    </div>
-                </div>
-                <div class="d-flex align-items-center justify-content-center w-100" data-aos="fade-up"
-                    data-aos-delay="400">
-                    <button class="featureBtn px-5 py-3">More Features</button>
-                </div>
-            </div>
-    </section>
-    <!--End of Features Section-->
-
-
-    <!--Animation Feature Div-->
-    <section class="featureDiv container py-5 ">
-        <div class="d-flex flex-wrap align-items-center justify-content-between py-5">
-            <div class="animated-bg d-flex align-content-center justify-content-center" data-aos="fade-up">
-                <img class="img-fluid" src="./images/hero-img-1.png" alt="">
-            </div>
-            <div class="txt-side d-flex flex-column align-items-start justify-content-start" data-aos="fade-up">
-                <h4>Fearutes</h4>
-                <h1 class="mb-4 ">Push Your Visitors Into Happy Customers</h1>
-                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, suscipit itaque
-                    quaerat dicta porro illum, autem, molestias ut animi ab aspernatur dolorum officia nam dolore.
-                    Voluptatibus aliquam earum labore atque.</p>
-                <div class="d-flex align-items-center justify-content-between gap-3"
-                    style="width: 585; max-width: 100%;">
-                    <div class="newspaperDiv d-flex align-items-start justify-content-start gap-3">
-                        <i class="fa-solid fa-newspaper"></i>
-                        <div class="d-flex flex-column align-items-start justify-content-start">
-                            <h2>285</h2>
-                            <span>Created Projects</span>
-                        </div>
-                    </div>
-                    <div class="newspaperDiv d-flex align-items-start justify-content-start gap-3">
-                        <i class="fa-solid fa-users"></i>
-                        <div class="d-flex flex-column align-items-start justify-content-start">
-                            <h2>6560</h2>
-                            <span>Happy Clients</span>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="py-4">
-                    <button class="readBtn py-3 px-5"> Read More</button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--End Animation div-->
-
-
 
     <!--Start of FAQ Section-->
     <section class=" container-fluid FAQsection p-5 d-flex align-items-center justify-content-center">
@@ -644,264 +512,6 @@
     </section>
     <!--End of Pricing plan-->
 
-
-    <!--Blog Section-->
-    <section class="blogs p-5">
-        <div class="upperText d-flex flex-column align-items-center justify-content-center gap-2 px-1 py-5 p-md-5"
-            data-aos="fade-up">
-            <h4>Our Blog</h4>
-            <h1>Join Us For New Blog</h1>
-            <p class="mb-5">Dolor sit amet consectetur, adipisicing elit. Ipsam, beatae maxime. Vel animi eveniet
-                doloremque reiciendis soluta iste provident non rerum illum perferendis earum est architecto dolores
-                vitae quia vero quod incidunt culpa corporis, porro doloribus. Voluptates nemo doloremque cum.</p>
-        </div>
-
-        <div class="blogCardsContainer d-flex flex-wrap align-items-center justify-content-center gap-5 gap-md-0">
-            <div class="blogCard px-3 d-flex flex-column" data-aos="fade-up" data-aos-delay="0">
-                <div class=" position-relative">
-                    <div class=" overLayDivContainer">
-                        <img class="img-fluid" src="./images/blog-1.png" alt="">
-                        <div class="overLayDiv"></div>
-                    </div>
-                    <div
-                        class="iconContainer position-absolute d-flex align-items-center p-3 justify-content-between bottom-0">
-                        <span>
-                            <i class="fa-solid fa-clock"></i>
-                            Dec 01.2024
-                        </span>
-                        <div>
-                            <span>
-                                3
-                                <i class="fa-solid fa-heart"></i>
-                            </span>
-                            <span>
-                                0
-                                <i class="fa-solid fa-comment"></i>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="blogText p-4">
-                    <h5>Dolor, sit amet consectetur adipisicing</h5>
-                    <p class="mb-4">Lorem ipsum dolor sit amet consectur adip sed eiusmod amet consectur adip.</p>
-                    <button class="py-2 px-4">Read More</button>
-                </div>
-            </div>
-            <div class="blogCard px-3 d-flex flex-column" data-aos="fade-up" data-aos-delay="100">
-                <div class=" position-relative">
-                    <div class=" overLayDivContainer">
-                        <img class="img-fluid" src="./images/blog-2.png" alt="">
-                        <div class="overLayDiv"></div>
-                    </div>
-                    <div
-                        class="iconContainer position-absolute d-flex align-items-center p-3 justify-content-between bottom-0">
-                        <span>
-                            <i class="fa-solid fa-clock"></i>
-                            Dec 01.2024
-                        </span>
-                        <div>
-                            <span>
-                                3
-                                <i class="fa-solid fa-heart"></i>
-                            </span>
-                            <span>
-                                0
-                                <i class="fa-solid fa-comment"></i>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="blogText p-4">
-                    <h5>Dolor, sit amet consectetur adipisicing</h5>
-                    <p class="mb-4">Lorem ipsum dolor sit amet consectur adip sed eiusmod amet consectur adip.</p>
-                    <button class="py-2 px-4">Read More</button>
-                </div>
-            </div>
-            <div class="blogCard px-3 d-flex flex-column" data-aos="fade-up" data-aos-delay="200">
-                <div class=" position-relative">
-                    <div class=" overLayDivContainer">
-                        <img class="img-fluid" src="./images/blog-3.png" alt="">
-                        <div class="overLayDiv"></div>
-                    </div>
-                    <div
-                        class="iconContainer position-absolute d-flex align-items-center p-3 justify-content-between bottom-0">
-                        <span>
-                            <i class="fa-solid fa-clock"></i>
-                            Dec 01.2024
-                        </span>
-                        <div>
-                            <span>
-                                3
-                                <i class="fa-solid fa-heart"></i>
-                            </span>
-                            <span>
-                                0
-                                <i class="fa-solid fa-comment"></i>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="blogText p-4">
-                    <h5>Dolor, sit amet consectetur adipisicing</h5>
-                    <p class="mb-4">Lorem ipsum dolor sit amet consectur adip sed eiusmod amet consectur adip.</p>
-                    <button class="py-2 px-4">Read More</button>
-                </div>
-            </div>
-            <div class="blogCard px-3 d-flex flex-column" data-aos="fade-up" data-aos-delay="300">
-                <div class=" position-relative">
-                    <div class=" overLayDivContainer">
-                        <img class="img-fluid" src="./images/blog-4.png" alt="">
-                        <div class="overLayDiv"></div>
-                    </div>
-                    <div
-                        class="iconContainer position-absolute d-flex align-items-center p-3 justify-content-between bottom-0">
-                        <span>
-                            <i class="fa-solid fa-clock"></i>
-                            Dec 01.2024
-                        </span>
-                        <div>
-                            <span>
-                                3
-                                <i class="fa-solid fa-heart"></i>
-                            </span>
-                            <span>
-                                0
-                                <i class="fa-solid fa-comment"></i>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="blogText p-4">
-                    <h5>Dolor, sit amet consectetur adipisicing</h5>
-                    <p class="mb-4">Lorem ipsum dolor sit amet consectur adip sed eiusmod amet consectur adip.</p>
-                    <button class="py-2 px-4">Read More</button>
-                </div>
-            </div>
-
-
-        </div>
-    </section>
-    <!--End of Blog-->
-
-
-    <!--testimonials & slider-->
-    <section class="Testimonials container-fluid d-flex align-items-start justify-content-center mt-5">
-        <div class="content container d-flex flex-wrap align-items-center p-1 p-md-5" style=" min-height: 100vh;">
-            <div class="d-flex flex-column align-items-center justify-content-center gap-2  px-2 px-md-5"
-                data-aos="fade-up">
-                <h4>Testimonial</h4>
-                <h1>What Our Client Say About Us</h1>
-                <p class="mb-5">Dolor sit amet consectetur, adipisicing elit. Ipsam, beatae maxime. Vel animi eveniet
-                    doloremque reiciendis soluta iste provident non rerum illum perferendis earum est architecto dolores
-                    vitae quia vero quod incidunt culpa corporis, porro doloribus. Voluptates nemo doloremque cum.</p>
-            </div>
-            <div class="profileSlider py-5 w-100 d-flex align-items-center" data-aos="zoom-in" data-aos-duration="3000">
-                <div id="carouselExampleIndicators" class="carousel slide myCarousel" data-bs-ride="carousel"
-                    data-bs-interval="2000">
-                    <div class="carousel-inner">
-                        <!--Slider 1-->
-                        <div class="carousel-item active">
-                            <div class="sliderContainer d-flex flex-column align-items-center gap-2 p-5">
-                                <div class="imgContainer d-flex  align-items-center gap-3">
-                                    <img class="img-fluid rounded-circle" src="./images/testimonial-img-1.jpg" alt="">
-                                    <div class="d-flex flex-column">
-                                        <h5 class="mb-2">John Abraham</h5>
-                                        <p class="mb-0">New York, USA</p>
-                                    </div>
-                                </div>
-                                <p class="mt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores
-                                    nemo facilis tempora esse explicabo sed! Dignissimos quia ullam pariatur blanditiis
-                                    sed
-                                    voluptatum. Totam aut quidem laudantium tempora. Minima, saepe earum!</p>
-                                <div class="stars d-flex align-items-center justify-content-center">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-
-                            </div>
-                        </div>
-                        <!--Slider 2-->
-                        <div class="carousel-item ">
-                            <div class="sliderContainer d-flex flex-column align-items-center gap-2 p-5">
-                                <div class="imgContainer d-flex  align-items-center gap-3">
-                                    <img class="img-fluid rounded-circle" src="./images/testimonial-img-2.jpg" alt="">
-                                    <div class="d-flex flex-column">
-                                        <h5 class="mb-2">John Abraham</h5>
-                                        <p class="mb-0">New York, USA</p>
-                                    </div>
-                                </div>
-                                <p class="mt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores
-                                    nemo facilis tempora esse explicabo sed! Dignissimos quia ullam pariatur blanditiis
-                                    sed
-                                    voluptatum. Totam aut quidem laudantium tempora. Minima, saepe earum!</p>
-                                <div class="stars d-flex align-items-center justify-content-center">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-
-                            </div>
-                        </div>
-                        <!--Slider 3-->
-                        <div class="carousel-item ">
-                            <div class="sliderContainer d-flex flex-column align-items-center gap-2 p-5">
-                                <div class="imgContainer d-flex  align-items-center gap-3">
-                                    <img class="img-fluid rounded-circle" src="./images/testimonial-img-3.jpg" alt="">
-                                    <div class="d-flex flex-column">
-                                        <h5 class="mb-2">John Abraham</h5>
-                                        <p class="mb-0">New York, USA</p>
-                                    </div>
-                                </div>
-                                <p class="mt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores
-                                    nemo facilis
-                                    tempora esse explicabo sed! Dignissimos quia ullam pariatur blanditiis sed
-                                    voluptatum. Totam aut quidem laudantium tempora. Minima, saepe earum!</p>
-                                <div class="stars d-flex align-items-center justify-content-center">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-indicators ">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                            class="active indicator-img" aria-current="true" aria-label="Slide 1">
-                            <img class="img-fluid rounded-circle" src="./images/testimonial-img-1.jpg" alt="">
-                        </button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                            class="indicator-img" aria-label="Slide 2">
-                            <img class="img-fluid rounded-circle" src="./images/testimonial-img-2.jpg" alt="">
-                        </button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                            class="indicator-img" aria-label="Slide 3">
-                            <img class="img-fluid rounded-circle" src="./images/testimonial-img-3.jpg" alt="">
-                        </button>
-                    </div>
-                    <button class="carousel-control-prev custom-control" type="button"
-                        data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                        <i class="fa-solid fa-arrow-left"></i>
-                    </button>
-                    <button class="carousel-control-next custom-control" type="button"
-                        data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--End of testimonials slider-->
-
     <!--footer service-->
     <section class="footerService container-fluid p-5 d-flex align-items-center justify-content-center">
         <div class="content p-4 d-flex flex-wrap align-items-start gap-5">
@@ -1018,7 +628,7 @@
         const backToTop = document.getElementById('backToTop');
 
         window.addEventListener('scroll', () => {
-            const headerHeight = document.querySelector('.heroSection').offsetHeight;
+            const headerHeight = document.querySelector('.aboutHeroSection').offsetHeight;
 
             if (window.scrollY > headerHeight) {
                 backToTop.style.display = 'block';
@@ -1032,6 +642,8 @@
         });
 
     </script>
+
+
 
 </body>
 

@@ -80,7 +80,7 @@ header {
                 background: #f6f6fa;
                 list-style: none;
                 padding: 0;
-               
+
                 opacity: 0;
                 transform: translateY(-10px);
                 pointer-events: none;
@@ -101,10 +101,12 @@ header {
             }
 
             .pages-list li:hover {
-                background:#f74780;
-                color: white;
-            }
+                background: #f74780;
 
+                a {
+                    color: white;
+                }
+            }
 
 
         }
@@ -1904,5 +1906,168 @@ footer {
 
     100% {
         transform: translateX(-50%) translateY(-110vh) rotate(720deg);
+    }
+}
+
+
+/****************************** Contact US page***************************/
+.contact {
+    .ContactText {
+        h4 {
+            font-family: "Plus Jakarta Sans", sans-serif;
+            font-size: clamp(22px, 5vw, 24px);
+            font-weight: 500;
+            line-height: 28.8px;
+            color: rgb(247, 71, 128);
+            margin: 0px 0px 4px;
+            padding: 0px;
+        }
+
+        h1 {
+
+            font-family: "Plus Jakarta Sans", sans-serif;
+            font-size: clamp(36px, 4vw, 48px);
+            font-weight: 700;
+            line-height: 57.6px;
+            color: rgb(53, 63, 79);
+            margin: 0 0 24px 0
+        }
+
+        p {
+
+            font-family: Rubik, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: rgb(117, 117, 117);
+            margin: 0px;
+            padding: 0px;
+            text-align: center;
+            max-height: 72px;
+            max-width: 900px;
+        }
+    }
+
+    .contactForm {
+        .leftSide {
+            height: 616.927px;
+            width: 582px;
+            max-width: 100%;
+
+            h2 {
+
+                font-family: "Plus Jakarta Sans", sans-serif;
+                font-size: 48px;
+                font-weight: 700;
+                line-height: 57.6px;
+                text-align: start;
+                color: rgb(53, 63, 79);
+                margin: 0px 0px 8px;
+            }
+
+            p {
+                font-family: Rubik, sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                text-align: start;
+                text-transform: none;
+                color: rgb(117, 117, 117);
+
+                span {
+                    a {
+                        /* Font & Text */
+                        font-family: Rubik, sans-serif;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-variant: normal;
+                        font-weight: 700;
+                        letter-spacing: normal;
+                        line-height: 24px;
+                        text-decoration: none solid rgb(247, 71, 128);
+                        text-align: start;
+                        text-indent: 0px;
+                        text-transform: none;
+                        vertical-align: baseline;
+                        white-space: normal;
+                        word-spacing: 0px;
+
+                        /* Color & Background */
+                        background-attachment: scroll;
+                        background-color: rgba(0, 0, 0, 0);
+                        background-image: none;
+                        background-position: 0% 0%;
+                        background-repeat: repeat;
+                        color: rgb(247, 71, 128);
+
+                        /* Box */
+                        height: auto;
+                        width: auto;
+                        border: 0px none rgb(247, 71, 128);
+                        border-top: 0px none rgb(247, 71, 128);
+                        border-right: 0px none rgb(247, 71, 128);
+                        border-bottom: 0px none rgb(247, 71, 128);
+                        border-left: 0px none rgb(247, 71, 128);
+                        margin: 0px;
+                        padding: 0px;
+                        max-height: none;
+                        min-height: 0px;
+                        max-width: none;
+                        min-width: 0px;
+
+                        /* Positioning */
+                        position: static;
+                        top: auto;
+                        bottom: auto;
+                        right: auto;
+                        left: auto;
+                        float: none;
+                        display: inline;
+                        clear: none;
+                        z-index: auto;
+
+                        /* List */
+                        list-style-image: none;
+                        list-style-type: disc;
+                        list-style-position: outside;
+
+                        /* Table */
+                        border-collapse: separate;
+                        border-spacing: 0px;
+                        caption-side: top;
+                        empty-cells: show;
+                        table-layout: auto;
+
+                        /* Miscellaneous */
+                        overflow: visible;
+                        cursor: pointer;
+                        visibility: visible;
+
+                        /* Effects */
+                        transform: none;
+                        transition: all;
+                        outline: rgb(255, 0, 0) dashed 0.666667px;
+                        outline-offset: 0px;
+                        box-sizing: border-box;
+                        resize: none;
+                        text-shadow: none;
+                        text-overflow: clip;
+                        word-wrap: normal;
+                        box-shadow: none;
+                        border-top-left-radius: 0px;
+                        border-top-right-radius: 0px;
+                        border-bottom-left-radius: 0px;
+                        border-bottom-right-radius: 0px;
+                    }
+                }
+
+            }
+        }
+
+        .rightSide {
+            height: 616.927px;
+            width: 582px;
+            max-width: 100%;
+        }
     }
 }
