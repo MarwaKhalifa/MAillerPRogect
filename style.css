@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
+body {
+    overflow-x: hidden;
+}
+
 * {
     padding: 0px;
     margin: 0px;
@@ -921,14 +925,13 @@ header.scrolled {
             max-width: 100%;
 
             .itemCollapse {
-                background-color: rgb(255, 255, 255);
+                background-color: #fff;
                 min-height: 52px;
                 width: 534px;
                 max-width: 100%;
                 margin-bottom: 0 !important;
-                padding: 16px 20px;
-                z-index: 2;
                 border-radius: 10px;
+                overflow: hidden;
 
                 h4 {
                     font-family: "Plus Jakarta Sans", sans-serif;
@@ -936,15 +939,26 @@ header.scrolled {
                     font-weight: 400;
                     line-height: 19.2px;
                     color: rgb(117, 117, 117);
+                    transition: color 0.3s ease;
+                    margin: 0;
                 }
 
+                .activeCollapse {
+                    padding: 16px 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease;
 
-
+                    i {
+                        transition: transform 0.3s ease, color 0.3s ease;
+                    }
+                }
 
                 .CollapsCardDiv {
-                    margin: 0 !important;
+                    background-color: #fff;
                     border: none !important;
-
 
                     h5 {
                         font-family: "Plus Jakarta Sans", sans-serif;
@@ -960,12 +974,30 @@ header.scrolled {
                         font-weight: 400;
                         line-height: 24px;
                         color: rgb(117, 117, 117);
+                    }
+                }
 
+                /* ✨ الحالة المفتوحة */
+                &:has(> .collapse.show),
+                &:has(> .collapsing),
+                &:has(.activeCollapse[aria-expanded="true"]) {
+                    .activeCollapse {
+                        background-color: #FEEDF2;
+
+                        h4 {
+                            color: #DE4073;
+                        }
+
+                        i {
+                            transform: rotate(180deg);
+                            color: #DE4073;
+                        }
                     }
                 }
             }
-
         }
+
+
 
         .bg-img {
             min-height: 388.354px;
